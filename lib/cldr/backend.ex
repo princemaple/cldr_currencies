@@ -408,7 +408,7 @@ defmodule Cldr.Currency.Backend do
 
         ## Example
 
-            iex> MyApp.Cldr.Currency.currencies_for_locale("en")
+            => MyApp.Cldr.Currency.currencies_for_locale("en")
             {:ok,
               %{
                 FJD: %Cldr.Currency{
@@ -478,7 +478,7 @@ defmodule Cldr.Currency.Backend do
 
         ## Example
 
-            iex> MyApp.Cldr.Currency.currency_strings("en")
+            => MyApp.Cldr.Currency.currency_strings("en")
             {:ok,
              %{
                "mexican silver pesos" => :MXP,
@@ -636,7 +636,7 @@ defmodule Cldr.Currency.Backend do
 
         ## Example
 
-            iex> MyApp.Cldr.Currency.currencies_for_locale!("en")
+            => MyApp.Cldr.Currency.currencies_for_locale!("en")
             %{
               FJD: %Cldr.Currency{
                 cash_digits: 2,
@@ -710,7 +710,7 @@ defmodule Cldr.Currency.Backend do
 
         ## Example
 
-            iex> MyApp.Cldr.Currency.currency_strings!("en")
+            => MyApp.Cldr.Currency.currency_strings!("en")
             %{
               "mexican silver pesos" => :MXP,
               "sudanese dinar" => :SDD,

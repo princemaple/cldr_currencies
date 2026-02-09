@@ -1232,7 +1232,7 @@ defmodule Cldr.Currency do
 
   ### Example
 
-      iex> Cldr.Currency.currencies_for_locale("en", MyApp.Cldr)
+      => Cldr.Currency.currencies_for_locale("en", MyApp.Cldr)
       {:ok,
         %{
           FJD: %Cldr.Currency{
@@ -1305,40 +1305,40 @@ defmodule Cldr.Currency do
 
   ### Example
 
-      iex> MyApp.Cldr.Currency.currencies_for_locale!("en")
-    %{
-      FJD: %Cldr.Currency{
-        cash_digits: 2,
-        cash_rounding: 0,
-        code: "FJD",
-        count: %{one: "Fijian dollar", other: "Fijian dollars"},
-        digits: 2,
-        from: nil,
-        iso_digits: 2,
-        name: "Fijian Dollar",
-        narrow_symbol: "$",
-        rounding: 0,
-        symbol: "FJD",
-        tender: true,
-        to: nil
-      },
-      SUR: %Cldr.Currency{
-        cash_digits: 2,
-        cash_rounding: 0,
-        code: "SUR",
-        count: %{one: "Soviet rouble", other: "Soviet roubles"},
-        digits: 2,
-        from: nil,
-        iso_digits: nil,
-        name: "Soviet Rouble",
-        narrow_symbol: nil,
-        rounding: 0,
-        symbol: "SUR",
-        tender: true,
-        to: nil
-      },
-      ...
-     }
+      => MyApp.Cldr.Currency.currencies_for_locale!("en")
+      %{
+        FJD: %Cldr.Currency{
+          cash_digits: 2,
+          cash_rounding: 0,
+          code: "FJD",
+          count: %{one: "Fijian dollar", other: "Fijian dollars"},
+          digits: 2,
+          from: nil,
+          iso_digits: 2,
+          name: "Fijian Dollar",
+          narrow_symbol: "$",
+          rounding: 0,
+          symbol: "FJD",
+          tender: true,
+          to: nil
+        },
+        SUR: %Cldr.Currency{
+          cash_digits: 2,
+          cash_rounding: 0,
+          code: "SUR",
+          count: %{one: "Soviet rouble", other: "Soviet roubles"},
+          digits: 2,
+          from: nil,
+          iso_digits: nil,
+          name: "Soviet Rouble",
+          narrow_symbol: nil,
+          rounding: 0,
+          symbol: "SUR",
+          tender: true,
+          to: nil
+        },
+        ...
+      }
 
   """
   @spec currencies_for_locale!(
@@ -1377,7 +1377,7 @@ defmodule Cldr.Currency do
 
   ### Example
 
-      iex> Cldr.Currency.currency_strings("en", MyApp.Cldr)
+      => Cldr.Currency.currency_strings("en", MyApp.Cldr)
       {:ok,
        %{
          "mexican silver pesos" => :MXP,
@@ -1392,7 +1392,7 @@ defmodule Cldr.Currency do
       }}
 
       # Currencies match all currency status'
-      iex> Cldr.Currency.currency_strings "en", MyApp.Cldr, [:tender, :current, :unannotated]
+      => Cldr.Currency.currency_strings "en", MyApp.Cldr, [:tender, :current, :unannotated]
       {:ok,
        %{
          "rsd" => :RSD,
@@ -1442,7 +1442,7 @@ defmodule Cldr.Currency do
 
   ### Example
 
-      iex> Cldr.Currency.currency_strings!("en", MyApp.Cldr)
+      => Cldr.Currency.currency_strings!("en", MyApp.Cldr)
       %{
         "mexican silver pesos" => :MXP,
         "sudanese dinar" => :SDD,
